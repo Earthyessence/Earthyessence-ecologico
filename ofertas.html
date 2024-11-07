@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas Especiales - EarthyEssence</title>
+    <title>Productos - EarthyEssence</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
         }
 
         header {
-            background-color: #4CAF50; 
+            background-color: #8bc34a;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -53,48 +53,77 @@
             color: white;
             text-align: center;
             padding: 10px;
+            font-size: 12px;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
 
-        .offer {
-            background-color: #ff9800;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            margin-top: 20px;
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
+        .product {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <img src="https://drive.google.com/uc?id=1sdjpM4ap5Kmbsb8m8pmICtEX6tayuhPN" alt="Imagen de productos ecológicos">
-    <h1>Ofertas Especiales de EarthyEssence</h1>
+    <h1>Productos de EarthyEssence</h1>
 </header>
 
 <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="contacto.html">Contacto</a>
 </nav>
 
-<section id="ofertas">
-    <h2>Ofertas Exclusivas</h2>
-    <div class="offer">
-        <h3>Compra 2 y Lleva 3</h3>
-        <p>Compra 2 pastillas limpiadoras y lleva una adicional GRATIS. ¡No te lo pierdas!</p>
-    </div>
-    <div class="offer">
-        <h3>Combo Ecológico Familiar</h3>
-        <p>Compra 1 litro de líquido anti malos olores y obtén una pastilla limpiadora GRATIS. ¡Aprovecha!</p>
-    </div>
-    <div class="offer">
-        <h3>Descuento de Primer Compra</h3>
-        <p>Si es tu primera compra, recibe un 15% de descuento con el código **BIENVENIDO15**.</p>
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://via.placeholder.com/400x300.png?text=Pastilla+Limpiadora+Inodoro" alt="Pastilla Limpiadora Inodoro">
+            <h3>Pastilla Limpiadora Inodoro</h3>
+            <p>Precio: $9.90</p>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/400x300.png?text=Pastilla+Limpiadora+Urinarios" alt="Pastilla Limpiadora Urinarios">
+            <h3>Pastilla Limpiadora Urinarios</h3>
+            <p>Precio: $9.90</p>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/400x300.png?text=Líquido+Anti+Malos+Olores" alt="Líquido Anti Malos Olores">
+            <h3>Líquido Anti Malos Olores</h3>
+            <p>Precio: $85.00 por litro</p>
+        </div>
     </div>
 </section>
 
@@ -105,3 +134,4 @@
 
 </body>
 </html>
+
